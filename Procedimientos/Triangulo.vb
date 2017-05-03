@@ -1,5 +1,6 @@
 ﻿Module Triangulo
     Sub main()
+        'hola
         Dim numero1, numero2 As Single
         Console.WriteLine("Ingese el valor del lado A: ")
         numero1 = Console.ReadLine
