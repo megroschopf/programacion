@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{854B390F-696F-43DF-9646-98969FEC302E}</ProjectGuid>
+    <ProjectGuid>{B97D84D1-CD82-4DFD-9825-0F0EDF233439}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <StartupObject>HolaMundo.fecha2</StartupObject>
-    <RootNamespace>HolaMundo</RootNamespace>
-    <AssemblyName>HolaMundo</AssemblyName>
+    <StartupObject>Estructura_control_flujo.Fibonacci</StartupObject>
+    <RootNamespace>Estructura_control_flujo</RootNamespace>
+    <AssemblyName>Estructura_control_flujo</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <MyType>Console</MyType>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
@@ -20,7 +20,7 @@
     <DefineDebug>true</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <OutputPath>bin\Debug\</OutputPath>
-    <DocumentationFile>HolaMundo.xml</DocumentationFile>
+    <DocumentationFile>Estructura_control_flujo.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -30,7 +30,7 @@
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DocumentationFile>HolaMundo.xml</DocumentationFile>
+    <DocumentationFile>Estructura_control_flujo.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
   <PropertyGroup>
@@ -66,21 +66,16 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="absoluto.vb" />
-    <Compile Include="aproximacion.vb" />
-    <Compile Include="Aritmetica.vb" />
-    <Compile Include="booleanos.vb" />
-    <Compile Include="concatenacion.vb" />
-    <Compile Include="crearfecha.vb" />
-    <Compile Include="ecuacion.vb" />
-    <Compile Include="fecha.vb" />
-    <Compile Include="fecha2.vb" />
-    <Compile Include="interes.vb" />
-    <Compile Include="maximo.vb" />
-    <Compile Include="semanas.vb" />
-    <Compile Include="Suma.vb" />
-    <Compile Include="titulos.vb" />
-    <Compile Include="variables.vb" />
+    <Compile Include="Convertir.vb" />
+    <Compile Include="Deposito.vb" />
+    <Compile Include="Fibonacci.vb" />
+    <Compile Include="Grados.vb" />
+    <Compile Include="MayorMenor.vb" />
+    <Compile Include="mayorposicion.vb" />
+    <Compile Include="Menor.vb" />
+    <Compile Include="MesesCaseIf.vb" />
+    <Compile Include="MesesCases.vb" />
+    <Compile Include="Multiplos.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -96,6 +91,11 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="ParImpar.vb" />
+    <Compile Include="Primo.vb" />
+    <Compile Include="venta.vb" />
+    <Compile Include="ventacase.vb" />
+    <Compile Include="VentaLoop.vb" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="My Project\Resources.resx">
