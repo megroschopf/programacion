@@ -18,13 +18,13 @@
         Dim resultado As Single
         Select Case operacion
             Case Is = 1
-                resultado = numero1 + numero2
+                Return numero1 + numero2
             Case Is = 2
-                resultado = numero1 - numero2
+                Return numero1 - numero2
             Case Is = 3
-                resultado = numero1 * numero2
+                Return numero1 * numero2
             Case Is = 4
-                resultado = numero1 / numero2
+                Return numero1 / numero2
         End Select
         Return resultado
     End Function
@@ -32,13 +32,13 @@
         Dim resultado As Single
         Select Case operacion
             Case Is = 1
-                resultado = calcular(operacion, numero1, numero2) + numero3
+                Return calcular(operacion, numero1, numero2) + numero3
             Case Is = 2
-                resultado = calcular(operacion, numero1, numero2) - numero3
+                Return calcular(operacion, numero1, numero2) - numero3
             Case Is = 3
-                resultado = calcular(operacion, numero1, numero2) * numero3
+                Return calcular(operacion, numero1, numero2) * numero3
             Case Is = 4
-                resultado = calcular(operacion, numero1, numero2) / numero3
+                Return calcular(operacion, numero1, numero2) / numero3
         End Select
         Return resultado
     End Function
@@ -46,13 +46,13 @@
         Dim resultado As Single
         Select Case operacion
             Case Is = 1
-                resultado = calcular(operacion, numero1, numero2, numero3) + numero4
+                Return calcular(operacion, numero1, numero2, numero3) + numero4
             Case Is = 2
-                resultado = calcular(operacion, numero1, numero2, numero3) - numero4
+                Return calcular(operacion, numero1, numero2, numero3) - numero4
             Case Is = 3
-                resultado = calcular(operacion, numero1, numero2, numero3) * numero4
+                Return calcular(operacion, numero1, numero2, numero3) * numero4
             Case Is = 4
-                resultado = calcular(operacion, numero1, numero2, numero3) / numero4
+                Return calcular(operacion, numero1, numero2, numero3) / numero4
         End Select
         Return resultado
     End Function
