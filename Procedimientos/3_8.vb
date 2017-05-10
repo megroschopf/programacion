@@ -15,7 +15,7 @@
         Console.ReadKey()
     End Sub
     Private Function calcular(operacion As operaciones, numero1 As Single, numero2 As Single) As Single
-        Dim resultado As Single
+        ' Dim resultado As Single
         Select Case operacion
             Case Is = 1
                 Return numero1 + numero2
@@ -25,11 +25,13 @@
                 Return numero1 * numero2
             Case Is = 4
                 Return numero1 / numero2
+            Case Else
+                Return Nothing
         End Select
-        Return resultado
+        '  Return resultado
     End Function
     Private Function calcular(operacion As operaciones, numero1 As Single, numero2 As Single, numero3 As Single) As Single
-        Dim resultado As Single
+        'Dim resultado As Single
         Select Case operacion
             Case Is = 1
                 Return calcular(operacion, numero1, numero2) + numero3
@@ -39,11 +41,13 @@
                 Return calcular(operacion, numero1, numero2) * numero3
             Case Is = 4
                 Return calcular(operacion, numero1, numero2) / numero3
+            Case Else
+                Return Nothing
         End Select
-        Return resultado
+        ' Return resultado
     End Function
     Private Function calcular(operacion As operaciones, numero1 As Single, numero2 As Single, numero3 As Single, numero4 As Single) As Single
-        Dim resultado As Single
+        ' Dim resultado As Single
         Select Case operacion
             Case Is = 1
                 Return calcular(operacion, numero1, numero2, numero3) + numero4
@@ -53,8 +57,10 @@
                 Return calcular(operacion, numero1, numero2, numero3) * numero4
             Case Is = 4
                 Return calcular(operacion, numero1, numero2, numero3) / numero4
+            Case Else
+                Return Nothing
         End Select
-        Return resultado
+        '  Return resultado
     End Function
     Private Function calcular(numero1 As Single, numero2 As Single) As Single
         Return calcular(operaciones.Suma, numero1, numero2)
