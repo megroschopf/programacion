@@ -17,13 +17,13 @@
     Private Function calcular(operacion As operaciones, numero1 As Single, numero2 As Single) As Single
         ' Dim resultado As Single
         Select Case operacion
-            Case Is = 1
+            Case operaciones.Suma
                 Return numero1 + numero2
-            Case Is = 2
+            Case operaciones.Resta
                 Return numero1 - numero2
-            Case Is = 3
+            Case operaciones.Multiplicacion
                 Return numero1 * numero2
-            Case Is = 4
+            Case operaciones.Division
                 Return numero1 / numero2
             Case Else
                 Return Nothing
@@ -33,13 +33,13 @@
     Private Function calcular(operacion As operaciones, numero1 As Single, numero2 As Single, numero3 As Single) As Single
         ' Dim resultado As Single
         Select Case operacion
-            Case Is = 1
+            Case operaciones.Suma
                 Return calcular(operacion, numero1, numero2) + numero3
-            Case Is = 2
+            Case operaciones.Resta
                 Return calcular(operacion, numero1, numero2) - numero3
-            Case Is = 3
+            Case operaciones.Multiplicacion
                 Return calcular(operacion, numero1, numero2) * numero3
-            Case Is = 4
+            Case operaciones.Division
                 Return calcular(operacion, numero1, numero2) / numero3
             Case Else
                 Return Nothing
@@ -49,13 +49,13 @@
     Private Function calcular(operacion As operaciones, numero1 As Single, numero2 As Single, numero3 As Single, numero4 As Single) As Single
         ' Dim resultado As Single
         Select Case operacion
-            Case Is = 1
+            Case operaciones.Suma
                 Return calcular(operacion, numero1, numero2, numero3) + numero4
-            Case Is = 2
+            Case operaciones.Resta
                 Return calcular(operacion, numero1, numero2, numero3) - numero4
-            Case Is = 3
+            Case operaciones.Multiplicacion
                 Return calcular(operacion, numero1, numero2, numero3) * numero4
-            Case Is = 4
+            Case operaciones.Division
                 Return calcular(operacion, numero1, numero2, numero3) / numero4
             Case Else
                 Return Nothing
