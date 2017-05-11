@@ -73,37 +73,37 @@
     End Function
     Private Sub mostrar_operacion(operacion As operaciones, numero1 As Single, numero2 As Single)
         Select Case operacion
-            Case Is = 1
+            Case operaciones.suma
                 Console.WriteLine(" {0} + {1} = {2} ", numero1, numero2, (calcular(operacion, numero1, numero2)))
-            Case Is = 2
+            Case operaciones.resta
                 Console.WriteLine(" {0} - {1} = {2}", numero1, numero2, (calcular(operacion, numero1, numero2)))
-            Case Is = 3
+            Case operaciones.Multiplicacion
                 Console.WriteLine(" {0} * {1} = {2}", numero1, numero2, (calcular(operacion, numero1, numero2)))
-            Case Is = 4
+            Case operaciones.Division
                 Console.WriteLine(" {0} / {1} = {2}", numero1, numero2, (calcular(operacion, numero1, numero2)))
         End Select
     End Sub
     Private Sub mostrar_operacion(operacion As operaciones, numero1 As Single, numero2 As Single, numero3 As Single)
         Select Case operacion
-            Case Is = 1
+            Case operaciones.suma
                 Console.WriteLine(" {0} + {1} + {2} = {3} ", numero1, numero2, numero3, (calcular(operacion, numero1, numero2, numero3)))
-            Case Is = 2
+            Case operaciones.resta
                 Console.WriteLine(" {0} - {1} - {2} = {3}", numero1, numero2, numero3, (calcular(operacion, numero1, numero2, numero3)))
-            Case Is = 3
+            Case operaciones.Multiplicacion
                 Console.WriteLine(" {0} * {1} * {2} = {3}", numero1, numero2, numero3, (calcular(operacion, numero1, numero2, numero3)))
-            Case Is = 4
+            Case operaciones.Division
                 Console.WriteLine(" {0} / {1} / {2} = {3}", numero1, numero2, numero3, (calcular(operacion, numero1, numero2, numero3)))
         End Select
     End Sub
     Private Sub mostrar_operacion(operacion As operaciones, numero1 As Single, numero2 As Single, numero3 As Single, numero4 As Single)
         Select Case operacion
-            Case Is = 1
+            Case operaciones.suma
                 Console.WriteLine(" {0} + {1} + {2} + {3} = {4}", numero1, numero2, numero3, numero4, (calcular(operacion, numero1, numero2, numero3, numero4)))
-            Case Is = 2
+            Case operaciones.resta
                 Console.WriteLine(" {0} - {1} - {2} - {3} = {4}", numero1, numero2, numero3, numero4, (calcular(operacion, numero1, numero2, numero3, numero4)))
-            Case Is = 3
+            Case operaciones.Multiplicacion
                 Console.WriteLine(" {0} * {1} * {2} * {3} = {4}", numero1, numero2, numero3, numero4, (calcular(operacion, numero1, numero2, numero3, numero4)))
-            Case Is = 4
+            Case operaciones.Division
                 Console.WriteLine(" {0} / {1} / {2} / {3} = {4}", numero1, numero2, numero3, numero4, (calcular(operacion, numero1, numero2, numero3, numero4)))
         End Select
     End Sub
